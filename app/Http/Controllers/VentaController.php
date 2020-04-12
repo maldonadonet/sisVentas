@@ -57,8 +57,8 @@ class VentaController extends Controller
           }
 
           public function store(VentaFormRequest $request){
-            try {
               DB::beginTransaction();
+            try {
                   $venta =new Venta;
                   $venta->idcliente=$request->get('idcliente');
                   $venta->tipo_comprobante=$request->get('tipo_comprobante');

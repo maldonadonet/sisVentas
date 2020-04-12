@@ -149,6 +149,7 @@
     var cont=0;
     total=0;
     subtotal=[]; //array para cada detalle del ingreso
+
     $("#guardar").hide();
 
     //funcion agregar
@@ -197,7 +198,7 @@
 
     //Funcion para eliminar cada detalle de ingreso
     function eliminar(index){
-        total=total-subtotal[index];    
+        total=total-subtotal[index];
         $("#total").html("$/. " + total);
         $("#fila" + index).remove();
         evaluar();

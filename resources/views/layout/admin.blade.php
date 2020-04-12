@@ -205,7 +205,7 @@
     @stack('scripts')
     <!-- Bootstrap 3.3.5 -->
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
-     <script src="{{asset('js/bootstrap-select.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap-select.min.js')}}"></script>
     <!-- AdminLTE App -->
     <script src="{{asset('js/app.min.js')}}"></script>
 

@@ -92,7 +92,8 @@ class IngresoController extends Controller{
 
   }
 
-  public function show($id){
+  public function show($id)
+  {
     $ingreso=DB::table('ingreso as i')
     ->join('persona as p','i.idproveedor','=','p.idpersona')
     ->join('detalle_ingreso as di','i.idingreso','=','di.idingreso')

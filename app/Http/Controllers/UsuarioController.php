@@ -57,7 +57,7 @@ class UsuarioController extends Controller
         return view('seguridad.usuario.edit',['usuario'=>User::findOrFail($id)]);
     }
 
-    public function update(UsuarioFormRequest $request,$id){
+    public function update(Request $request,$id){
         $usuario=User::findOrFail($id);
 
         $usuario->name=$request->get('name');
